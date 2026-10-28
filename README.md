@@ -45,13 +45,16 @@ those numbers so each dot sits on the detail it names.
 
 ## Deploy (GitHub Pages)
 
-`.github/workflows/pages.yml` publishes the repository root to GitHub Pages on every push to
-`main` (or from the Actions tab via "Run workflow").
+Live site: https://jacobnazar26-del.github.io/same-roots-new-skin/
 
-One-time setup in the repository: **Settings → Pages → Build and deployment → Source:
-GitHub Actions**. GitHub Pages for a *private* repository needs a paid GitHub plan; on a
-free plan, make the repository public first (Settings → General → Danger Zone → Change
-visibility). The site then lives at `https://<user>.github.io/<repo>/`.
+`.github/workflows/pages.yml` publishes the repository root to GitHub Pages on every push to
+`main` or `claude/new-session-l28vjv` (or from the Actions tab via "Run workflow"). The
+`github-pages` environment only accepts deploys from the repository's default branch, so keep
+the branch you push to set as the default, or add the other branch under Settings →
+Environments → github-pages → Deployment branches.
+
+One-time setup, already done for this repository: public visibility and **Settings → Pages →
+Source: GitHub Actions**.
 
 ## Publish as a claude.ai artifact
 
