@@ -1,0 +1,15 @@
+{
+  "name": "same-roots-new-skin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Same Roots, New Skin — Manhattan's Chinatown seen through the lens of Hong Kong & China. A scroll-driven feature article (static site, no framework).",
+  "type": "module",
+  "scripts": {
+    "photos": "node scripts/optimize-photos.mjs",
+    "serve": "python3 -m http.server 8080",
+    "artifact": "node scripts/build-artifact.mjs dist/same-roots-new-skin.html"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
+  }
+}
