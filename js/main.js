@@ -171,27 +171,29 @@
     });
   });
 
-  /* ---------- interview tabs ---------- */
-  var tabs = Array.prototype.slice.call(doc.querySelectorAll('.tab[role="tab"]'));
-  function selectTab(tab, focus) {
-    tabs.forEach(function (t) {
-      var on = t === tab;
-      t.setAttribute('aria-selected', String(on));
-      t.setAttribute('tabindex', on ? '0' : '-1');
-      var panel = doc.getElementById(t.getAttribute('aria-controls'));
-      if (panel) panel.hidden = !on;
-    });
-    if (focus) tab.focus();
-  }
-  tabs.forEach(function (tab, i) {
-    tab.addEventListener('click', function () { selectTab(tab, false); });
-    tab.addEventListener('keydown', function (e) {
-      var n = null;
-      if (e.key === 'ArrowRight') n = tabs[(i + 1) % tabs.length];
-      if (e.key === 'ArrowLeft') n = tabs[(i - 1 + tabs.length) % tabs.length];
-      if (e.key === 'Home') n = tabs[0];
-      if (e.key === 'End') n = tabs[tabs.length - 1];
-      if (n) { e.preventDefault(); selectTab(n, true); }
+  /* ---------- tabs (each role=tablist is its own group) ---------- */
+  Array.prototype.forEach.call(doc.querySelectorAll('[role="tablist"]'), function (list) {
+    var tabs = Array.prototype.slice.call(list.querySelectorAll('[role="tab"]'));
+    function selectTab(tab, focus) {
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', String(on));
+        t.setAttribute('tabindex', on ? '0' : '-1');
+        var panel = doc.getElementById(t.getAttribute('aria-controls'));
+        if (panel) panel.hidden = !on;
+      });
+      if (focus) tab.focus();
+    }
+    tabs.forEach(function (tab, i) {
+      tab.addEventListener('click', function () { selectTab(tab, false); });
+      tab.addEventListener('keydown', function (e) {
+        var n = null;
+        if (e.key === 'ArrowRight') n = tabs[(i + 1) % tabs.length];
+        if (e.key === 'ArrowLeft') n = tabs[(i - 1 + tabs.length) % tabs.length];
+        if (e.key === 'Home') n = tabs[0];
+        if (e.key === 'End') n = tabs[tabs.length - 1];
+        if (n) { e.preventDefault(); selectTab(n, true); }
+      });
     });
   });
 
@@ -229,15 +231,25 @@
     });
   });
 
-  /* ---------- citation focus management ---------- */
+  /* ---------- citation links: focus the target; "back" prefers history ---------- */
   Array.prototype.forEach.call(doc.querySelectorAll('.cite, .back'), function (a) {
-    a.addEventListener('click', function () {
-      var t = doc.querySelector(a.getAttribute('href'));
+    a.addEventListener('click', function (e) {
+      var href = a.getAttribute('href') || '';
+      if (a.classList.contains('back') && history.length > 1 && doc.referrer && doc.referrer.indexOf(location.origin) === 0) {
+        e.preventDefault(); history.back(); return;
+      }
+      if (href.charAt(0) !== '#') return;
+      var t = doc.querySelector(href);
       if (!t) return;
       if (!t.hasAttribute('tabindex')) t.setAttribute('tabindex', '-1');
       setTimeout(function () { t.focus({ preventScroll: true }); }, 50);
     });
   });
+  // arriving from the sources tab: highlight the cited sentence's marker
+  if (location.hash && /^#cite-/.test(location.hash)) {
+    var c = doc.querySelector(location.hash);
+    if (c) { c.setAttribute('tabindex', '-1'); setTimeout(function () { c.focus({ preventScroll: true }); }, 300); }
+  }
 
   /* ---------- polaroid line: the twelve prints, Chinatown beside its twin ---------- */
   var lineEl = doc.querySelector('[data-polaroid-line]');

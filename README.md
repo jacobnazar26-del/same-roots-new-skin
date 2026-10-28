@@ -4,8 +4,9 @@ Manhattan's Chinatown, seen through the lens of Hong Kong & China. A scroll-driv
 multimodal feature article built for NYU *Writing for Exploration* (Fall 2026).
 
 Plain HTML, CSS and JavaScript. No build step. Leaflet is vendored for the map.
+Two pages: `index.html` (the article) and `sources.html` (APA sources, linked from every superscript).
 
-The "twelve prints on a line" carousel in Places & Things is a vanilla-JS port of the
+The "twelve prints on a line" carousel that opens the page is a vanilla-JS port of the
 21st.dev **Polaroid Line Carousel** (`js/polaroid-line.js`). The original React/TSX
 component is kept, unmodified apart from a header note, at
 `components/ui/polaroid-line-carousel.tsx` for a future React/shadcn build; the site does
@@ -55,5 +56,5 @@ visibility). The site then lives at `https://<user>.github.io/<repo>/`.
 ## Publish as a claude.ai artifact
 
 ```bash
-npm run artifact     # writes dist/same-roots-new-skin.html (single file, everything inlined)
+npm run artifact     # writes dist/same-roots-new-skin.html (main page, everything inlined) and dist/sources.html
 ```

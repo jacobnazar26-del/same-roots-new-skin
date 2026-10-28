@@ -16,103 +16,91 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<a class="skip-link" href="#intro">Skip to the article</a>
+<a class="skip-link" href="#why">Skip to the article</a>
 <div class="progress" aria-hidden="true"><div class="progress__bar" id="progressBar"></div></div>
 
 <header class="nav" id="siteNav">
   <div class="nav__inner">
-    <a class="nav__brand" href="#top"><span class="nav__seal" aria-hidden="true">唐</span><span>Same Roots, New Skin</span></a>
+    <a class="nav__brand" href="index.html#top"><span class="nav__seal" aria-hidden="true">唐</span><span>Same Roots, New Skin</span></a>
     <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
       <span class="nav__burger" aria-hidden="true"></span>
     </button>
     <nav id="navMenu" class="nav__menu" aria-label="Sections">
-      <a href="#intro">Intro</a>
-      <a href="#questions">Questions</a>
-      <a href="#research">Research</a>
-      <a href="#places">Places &amp; Things</a>
-      <a href="#voices">Voices</a>
-      <a href="#neighborhood">If Chinatown Were…</a>
-      <a href="#readings">Readings</a>
-      <a href="#reflection">Reflection</a>
-      <a href="#sources">Sources</a>
+      <a href="index.html#walk">The Walk</a>
+      <a href="index.html#why">Why</a>
+      <a href="index.html#questions">Questions</a>
+      <a href="index.html#research">Research</a>
+      <a href="index.html#places">Places &amp; Things</a>
+      <a href="index.html#voices">Voices</a>
+      <a href="index.html#neighborhood">If Chinatown Were…</a>
+      <a href="index.html#essays">Essays</a>
+      <a class="nav__tab" href="sources.html">Sources</a>
     </nav>
   </div>
 </header>
 
 <main id="top">
 
-<!-- SECTION 0 — HERO -->
-<section class="hero" id="hero" aria-labelledby="heroTitle">
-  <div class="hero__media photo" data-file="ct-1-pell-st.jpg">
-    <picture>
-      <source srcset="public/photos/chinatown/ct-1-pell-st.webp" type="image/webp">
-      <img class="hero__bg" src="public/photos/chinatown/ct-1-pell-st.jpg" alt="Pell Street at midday: red brick walk-ups with black fire escapes, strings of paper lanterns, and the green Hip Sing Association sign." fetchpriority="high" onerror="this.closest('.photo').classList.add('is-missing')">
-    </picture>
-  </div>
-  <div class="hero__shade" aria-hidden="true"></div>
+<!-- HERO: title band + the twelve prints on a line -->
+<section class="hero hero--band" id="hero" aria-labelledby="heroTitle">
   <div class="lanterns" aria-hidden="true">
-    <div class="lantern" style="--x:8%;--d:0s;--len:60px;--size:0.9"><i></i><b></b><u></u></div>
-    <div class="lantern" style="--x:26%;--d:.6s;--len:110px;--size:0.7"><i></i><b></b><u></u></div>
-    <div class="lantern" style="--x:50%;--d:1.1s;--len:40px;--size:1.05"><i></i><b></b><u></u></div>
-    <div class="lantern" style="--x:71%;--d:.3s;--len:90px;--size:0.8"><i></i><b></b><u></u></div>
-    <div class="lantern" style="--x:90%;--d:.9s;--len:55px;--size:0.95"><i></i><b></b><u></u></div>
+    <div class="lantern" style="--x:6%;--d:0s;--len:24px;--size:0.55"><i></i><b></b><u></u></div>
+    <div class="lantern" style="--x:58%;--d:.7s;--len:10px;--size:0.5"><i></i><b></b><u></u></div>
+    <div class="lantern" style="--x:93%;--d:.4s;--len:30px;--size:0.6"><i></i><b></b><u></u></div>
   </div>
   <span class="vertical vertical--hero" aria-hidden="true">唐人街</span>
   <div class="hero__content">
     <p class="eyebrow eyebrow--light">An interactive community visual &amp; oral history</p>
-    <h1 class="hero__title" id="heroTitle">Same Roots,<br>New Skin</h1>
+    <h1 class="hero__title" id="heroTitle">Same Roots, New Skin</h1>
     <p class="hero__sub">Manhattan's Chinatown, seen through the lens of Hong&nbsp;Kong &amp; China</p>
     <p class="hero__byline">By Jacob Nazar · Writing for Exploration · NYU · Fall 2026</p>
-    <a class="btn" href="#intro">Start Walking ↓</a>
   </div>
 </section>
 
-<!-- SECTION 1 — INTRODUCTION & THESIS -->
-<section class="section reveal" id="intro" aria-labelledby="h-intro">
-  <div class="section__inner">
+<section class="walk" id="walk" aria-label="The walk: twelve prints on a line">
+  <div class="section__inner section__inner--wide">
+    <div class="line-head">
+      <span class="eyebrow">Twelve prints on a line</span>
+      <span class="map-hint">Drag the string or use the arrows. Each Chinatown print hangs beside its Hong Kong twin. "Read this stop" jumps to the story.</span>
+    </div>
+    <div id="polaroidLine" class="pline" data-polaroid-line></div>
+    <p class="walk__cta"><a class="btn" href="#why">Start Walking ↓</a></p>
+  </div>
+</section>
+
+<!-- 1 — WHY -->
+<section class="section reveal" id="why" aria-labelledby="h-why">
+  <div class="section__inner section__inner--wide">
     <header class="section__head">
       <span class="seal" aria-hidden="true">1</span>
-      <h2 id="h-intro">Why Chinatown, Why Hong Kong</h2>
+      <h2 id="h-why">Why Chinatown, Why Hong Kong</h2>
       <span class="vertical" aria-hidden="true">緣起</span>
     </header>
-    <div class="prose">
-      <p>In October, I traveled to Hong Kong, Shenzhen, and Guangzhou. A week later, I walked through Manhattan's Chinatown with my camera and a notebook. I expected Chinatown to feel like a smaller copy of what I had just seen. Instead, I found something more interesting.</p>
-    </div>
-    <blockquote class="thesis">
+    <div class="why">
+      <div class="prose prose--sm">
+        <p>In October, I traveled to Hong Kong, Shenzhen, and Guangzhou. A week later, I walked through Manhattan's Chinatown with my camera and a notebook. I expected Chinatown to feel like a smaller copy of what I had just seen. Instead, I found something more interesting.</p>
+        <h3 class="minihead">Before I Looked Closely</h3>
+        <p>I moved to New York from Los Angeles this fall to start at NYU, so Chinatown was a neighborhood I had passed through but never really seen. I knew it as a place for cheap dumplings, crowded sidewalks, and souvenir shops on Canal Street. I knew Chinese immigrants had built it, but I didn't know who they were, where they came from, or how the neighborhood had changed. Visiting Hong Kong and China right before this project gave me something most visitors don't have: a picture of the "original" to hold up against what I found on Mott Street.</p>
+      </div>
+      <blockquote class="thesis">
       <p>Chinatown is not a copy of Hong Kong or China. It is a hybrid. The fruit stalls, roast ducks, and red lanterns are the same ones I saw across the Pacific, but here they sit under fire escapes, beside GEICO billboards, and behind boxes tagged with graffiti. Chinatown shows what happens when a culture is carried across the world: its traditions survive, but they take on the face of the city that holds them.</p>
     </blockquote>
-  </div>
-</section>
-
-<hr class="rule">
-
-<!-- SECTION 2 — WHAT I ALREADY KNEW -->
-<section class="section reveal" id="before" aria-labelledby="h-before">
-  <div class="section__inner">
-    <header class="section__head">
-      <span class="seal" aria-hidden="true">2</span>
-      <h2 id="h-before">Before I Looked Closely</h2>
-      <span class="vertical" aria-hidden="true">初見</span>
-    </header>
-    <div class="prose">
-      <p>I moved to New York from Los Angeles this fall to start at NYU, so Chinatown was a neighborhood I had passed through but never really seen. I knew it as a place for cheap dumplings, crowded sidewalks, and souvenir shops on Canal Street. I knew Chinese immigrants had built it, but I didn't know who they were, where they came from, or how the neighborhood had changed. Visiting Hong Kong and China right before this project gave me something most visitors don't have: a picture of the "original" to hold up against what I found on Mott Street.</p>
     </div>
   </div>
 </section>
 
 <hr class="rule">
 
-<!-- SECTION 3 — QUESTIONS -->
+<!-- 2 — QUESTIONS -->
 <section class="section reveal" id="questions" aria-labelledby="h-questions">
   <div class="section__inner section__inner--wide">
     <header class="section__head">
-      <span class="seal" aria-hidden="true">3</span>
+      <span class="seal" aria-hidden="true">2</span>
       <h2 id="h-questions">The Questions I Carried</h2>
       <span class="vertical" aria-hidden="true">提問</span>
     </header>
     <p class="lede">I brainstormed every question I could think of, then chose the three that guided my research. <em>(Top three are marked.)</em> Tap a card to flip it.</p>
-
-    <ul class="flips" role="list">
+    <ul class="flips" role="list" id="flipList">
       <li><button class="flip" type="button" aria-pressed="false"><span class="flip__inner"><span class="flip__face flip__front"><span class="flip__num">1</span><span class="flip__q">How long have people lived or worked here?</span></span><span class="flip__face flip__back"><span class="flip__why">Brainstormed, not one of the three guiding questions.</span></span></span></button></li>
       <li><button class="flip flip--top" type="button" aria-pressed="false"><span class="flip__inner"><span class="flip__face flip__front"><span class="flip__topseal" aria-label="Top 3">TOP<br>3</span><span class="flip__num">2</span><span class="flip__q">How has this neighborhood changed over the years?</span></span><span class="flip__face flip__back"><span class="flip__label">Why I asked</span><span class="flip__why">Change was the theme both of my interviewees kept returning to.</span></span></span></button></li>
       <li><button class="flip" type="button" aria-pressed="false"><span class="flip__inner"><span class="flip__face flip__front"><span class="flip__num">3</span><span class="flip__q">What brought people's families here?</span></span><span class="flip__face flip__back"><span class="flip__why">Brainstormed, not one of the three guiding questions.</span></span></span></button></li>
@@ -126,73 +114,68 @@
       <li><button class="flip flip--top" type="button" aria-pressed="false"><span class="flip__inner"><span class="flip__face flip__front"><span class="flip__topseal" aria-label="Top 3">TOP<br>3</span><span class="flip__num">11</span><span class="flip__q">What feels familiar between Chinatown and Hong Kong, and what feels completely different?</span></span><span class="flip__face flip__back"><span class="flip__label">Why I asked</span><span class="flip__why">This became the lens for the entire project.</span></span></span></button></li>
       <li><button class="flip" type="button" aria-pressed="false"><span class="flip__inner"><span class="flip__face flip__front"><span class="flip__num">12</span><span class="flip__q">What should a newcomer understand about this place?</span></span><span class="flip__face flip__back"><span class="flip__why">Brainstormed, not one of the three guiding questions.</span></span></span></button></li>
     </ul>
-
-    <h3 class="subhead">Questions About Places I Haven't Been Inside Yet</h3>
+    <p class="more-row"><button class="acc__btn more-btn" type="button" aria-expanded="false" aria-controls="moreQuestions">Show the other nine questions, and three I still have</button></p>
+    <div id="moreQuestions" hidden>
+      <h3 class="subhead">Questions About Places I Haven't Been Inside Yet</h3>
     <ul class="plainlist">
       <li>What happens inside the Chinese Consolidated Benevolent Association on Mott Street?</li>
       <li>Who prays at the Mahayana Buddhist Temple on a normal weekday?</li>
       <li>What does the Museum of Chinese in America show about how this neighborhood began?</li>
     </ul>
+    </div>
   </div>
 </section>
 
 <hr class="rule">
 
-<!-- SECTION 4 — RESEARCH -->
+<!-- 3 — RESEARCH -->
 <section class="section reveal" id="research" aria-labelledby="h-research">
-  <div class="section__inner">
+  <div class="section__inner section__inner--wide">
     <header class="section__head">
-      <span class="seal" aria-hidden="true">4</span>
+      <span class="seal" aria-hidden="true">3</span>
       <h2 id="h-research">What I Learned</h2>
       <span class="vertical" aria-hidden="true">考據</span>
     </header>
-    <p class="lede"><em>(Superscript numbers link to Sources.)</em></p>
+    <p class="lede"><em>(Superscript numbers open the <a href="sources.html">Sources</a> tab.)</em></p>
     <ul class="facts">
-      <li>Chinese immigrants began settling on Mott, Pell, and Doyers Streets in the 1870s. The Chinese Exclusion Act of 1882 kept Chinatown a mostly male "bachelor society" for decades, until the Immigration Act of 1965 allowed families to come.<a class="cite" id="cite-1a" href="#src-1" aria-label="Source 1"><sup>1</sup></a></li>
-      <li>Early Chinatown spoke mainly Taishanese. After 1965, Cantonese speakers from Hong Kong and Guangdong arrived. In the 1980s and '90s, immigrants from Fuzhou settled along East Broadway, and today Mandarin is increasingly common.<a class="cite" id="cite-1b" href="#src-1" aria-label="Source 1"><sup>1</sup></a></li>
-      <li>The Chinese Consolidated Benevolent Association, founded in 1883, still serves as an umbrella group for about sixty community organizations.<a class="cite" id="cite-2a" href="#src-2" aria-label="Source 2"><sup>2</sup></a></li>
-      <li>The Hip Sing Association on Pell Street started as a tong, a mutual-protection group for Chinese immigrants facing prejudice, and was involved in the violent "Tong Wars" of the early 1900s.<a class="cite" id="cite-3a" href="#src-3" aria-label="Source 3"><sup>3</sup></a></li>
-      <li>The Mahayana Buddhist Temple at 133 Canal Street opened in 1997 inside a former movie theater and holds a 16-foot Buddha, the tallest in New York City.<a class="cite" id="cite-4a" href="#src-4" aria-label="Source 4"><sup>4</sup></a></li>
-      <li>Hop Kee has served Cantonese food from its basement at 21 Mott Street since 1968.<a class="cite" id="cite-5a" href="#src-5" aria-label="Source 5"><sup>5</sup></a> Great N.Y. Noodletown has been on the corner of Bowery and Bayard since 1981.<a class="cite" id="cite-6a" href="#src-6" aria-label="Source 6"><sup>6</sup></a></li>
-      <li class="facts__lens"><strong class="lens-tag">Lens fact:</strong> Hong Kong's Lee Tung Avenue, where I photographed the lanterns, used to be "Wedding Card Street," famous for its print shops. It was demolished in 2007 and rebuilt as a luxury shopping street, and the original shop owners never returned.<a class="cite" id="cite-7a" href="#src-7" aria-label="Source 7"><sup>7</sup></a> Every Mid-Autumn Festival, more than 800 red lanterns now hang over it.<a class="cite" id="cite-8a" href="#src-8" aria-label="Source 8"><sup>8</sup></a> Gentrification is reshaping both neighborhoods.</li>
+      <li>Chinese immigrants began settling on Mott, Pell, and Doyers Streets in the 1870s. The Chinese Exclusion Act of 1882 kept Chinatown a mostly male "bachelor society" for decades, until the Immigration Act of 1965 allowed families to come.<a class="cite" id="cite-1a" href="sources.html#src-1" aria-label="Source 1"><sup>1</sup></a></li>
+      <li>Early Chinatown spoke mainly Taishanese. After 1965, Cantonese speakers from Hong Kong and Guangdong arrived. In the 1980s and '90s, immigrants from Fuzhou settled along East Broadway, and today Mandarin is increasingly common.<a class="cite" id="cite-1b" href="sources.html#src-1" aria-label="Source 1"><sup>1</sup></a></li>
+      <li>The Chinese Consolidated Benevolent Association, founded in 1883, still serves as an umbrella group for about sixty community organizations.<a class="cite" id="cite-2a" href="sources.html#src-2" aria-label="Source 2"><sup>2</sup></a></li>
+      <li>The Hip Sing Association on Pell Street started as a tong, a mutual-protection group for Chinese immigrants facing prejudice, and was involved in the violent "Tong Wars" of the early 1900s.<a class="cite" id="cite-3a" href="sources.html#src-3" aria-label="Source 3"><sup>3</sup></a></li>
+      <li>The Mahayana Buddhist Temple at 133 Canal Street opened in 1997 inside a former movie theater and holds a 16-foot Buddha, the tallest in New York City.<a class="cite" id="cite-4a" href="sources.html#src-4" aria-label="Source 4"><sup>4</sup></a></li>
+      <li>Hop Kee has served Cantonese food from its basement at 21 Mott Street since 1968.<a class="cite" id="cite-5a" href="sources.html#src-5" aria-label="Source 5"><sup>5</sup></a> Great N.Y. Noodletown has been on the corner of Bowery and Bayard since 1981.<a class="cite" id="cite-6a" href="sources.html#src-6" aria-label="Source 6"><sup>6</sup></a></li>
+      <li class="facts__lens"><strong class="lens-tag">Lens fact:</strong> Hong Kong's Lee Tung Avenue, where I photographed the lanterns, used to be "Wedding Card Street," famous for its print shops. It was demolished in 2007 and rebuilt as a luxury shopping street, and the original shop owners never returned.<a class="cite" id="cite-7a" href="sources.html#src-7" aria-label="Source 7"><sup>7</sup></a> Every Mid-Autumn Festival, more than 800 red lanterns now hang over it.<a class="cite" id="cite-8a" href="sources.html#src-8" aria-label="Source 8"><sup>8</sup></a> Gentrification is reshaping both neighborhoods.</li>
     </ul>
   </div>
 </section>
 
 <hr class="rule">
 
-<!-- SECTION 5 — PLACES & THINGS -->
-<section class="section reveal" id="places" aria-labelledby="h-places">
+<!-- 4 — PLACES & THINGS -->
+<section class="section section--tight reveal" id="places" aria-labelledby="h-places">
   <div class="section__inner section__inner--wide">
     <header class="section__head">
-      <span class="seal" aria-hidden="true">5</span>
+      <span class="seal" aria-hidden="true">4</span>
       <h2 id="h-places">Places &amp; Things</h2>
       <span class="vertical" aria-hidden="true">唐人街</span>
     </header>
-    <p class="lede">Six stops, each one photographed twice: once on my walk through Chinatown, once on my trip to Hong Kong and China. Drag the handle on each photo to move between them. The gold dots mark the New York details.</p>
-
-    <div class="line-wrap">
-      <div class="line-head">
-        <span class="eyebrow">Twelve prints on a line</span>
-        <span class="map-hint">Drag the string or use the arrows. Each Chinatown print hangs beside its Hong Kong twin.</span>
+    <div class="places-intro">
+      <p class="lede">Six stops, each one photographed twice: once on my walk through Chinatown, once on my trip to Hong Kong and China. Drag the handle on each photo to move between them. The gold dots mark the New York details.</p>
+      <div class="map-wrap">
+        <div class="map-head">
+          <span class="eyebrow">Where I walked</span>
+          <span class="map-hint">Click a pin to jump to that stop.</span>
+        </div>
+        <div id="map" class="map" role="region" aria-label="Map of the six Chinatown locations" tabindex="0"></div>
+        <ol class="map-legend" aria-label="Map pins">
+          <li><a href="#place-1"><span class="pin-num">1</span>Pell St</a></li>
+          <li><a href="#place-2"><span class="pin-num">2</span>Mahayana Temple</a></li>
+          <li><a href="#place-3"><span class="pin-num">3</span>Hop Kee</a></li>
+          <li><a href="#place-4"><span class="pin-num">4</span>Noodletown</a></li>
+          <li><a href="#place-5"><span class="pin-num">5</span>Fruit stand</a></li>
+          <li><a href="#place-6"><span class="pin-num">6</span>Gift shop</a></li>
+        </ol>
       </div>
-      <div id="polaroidLine" class="pline" data-polaroid-line></div>
-    </div>
-
-    <div class="map-wrap">
-      <div class="map-head">
-        <span class="eyebrow">Where I walked</span>
-        <span class="map-hint">Click a pin to jump to that stop.</span>
-      </div>
-      <div id="map" class="map" role="region" aria-label="Map of the six Chinatown locations" tabindex="0"></div>
-      <ol class="map-legend" aria-label="Map pins">
-        <li><a href="#place-1"><span class="pin-num">1</span>Pell St</a></li>
-        <li><a href="#place-2"><span class="pin-num">2</span>Mahayana Temple</a></li>
-        <li><a href="#place-3"><span class="pin-num">3</span>Hop Kee</a></li>
-        <li><a href="#place-4"><span class="pin-num">4</span>Noodletown</a></li>
-        <li><a href="#place-5"><span class="pin-num">5</span>Fruit stand</a></li>
-        <li><a href="#place-6"><span class="pin-num">6</span>Gift shop</a></li>
-      </ol>
     </div>
   </div>
 </section>
@@ -208,6 +191,7 @@
       <span class="seal seal--sm" aria-hidden="true">1</span>
       <h3 id="h-place-1">Pell Street</h3>
     </header>
+    <div class="place__grid">
     <div class="compare" data-compare>
       <div class="compare__layer compare__lens photo" data-file="lens-6-signs.jpg">
         <picture>
@@ -237,6 +221,7 @@
         <p>In Hong Kong, the vertical signs stack just as high, but a red double-decker bus rolls beneath them. That bus is a leftover from British rule, a reminder that Hong Kong is a hybrid too.</p>
       </aside>
     </div>
+    </div>
   </div>
 </article>
 
@@ -247,6 +232,7 @@
       <span class="seal seal--sm" aria-hidden="true">2</span>
       <h3 id="h-place-2">Mahayana Buddhist Temple</h3>
     </header>
+    <div class="place__grid">
     <div class="compare" data-compare>
       <div class="compare__layer compare__lens photo" data-file="lens-3-old-new.jpg">
         <picture>
@@ -276,6 +262,7 @@
         <p>In Hong Kong, an old lavender apartment block stands in front of a glass tower that reflects the clouds. Both cities show the old and the new pressed side by side.</p>
       </aside>
     </div>
+    </div>
   </div>
 </article>
 
@@ -286,6 +273,7 @@
       <span class="seal seal--sm" aria-hidden="true">3</span>
       <h3 id="h-place-3">The Stairs Into Hop Kee</h3>
     </header>
+    <div class="place__grid">
     <div class="compare" data-compare>
       <div class="compare__layer compare__lens photo" data-file="lens-2-stairs.jpg">
         <picture>
@@ -314,6 +302,7 @@
         <p>In Hong Kong, the city climbs mountains, and worn concrete stairs with peeling railings lead into shops. In both places, the stairs decide who gets in.</p>
       </aside>
     </div>
+    </div>
   </div>
 </article>
 
@@ -328,6 +317,7 @@
       <span class="seal seal--sm" aria-hidden="true">4</span>
       <h3 id="h-place-4">The Noodletown Window</h3>
     </header>
+    <div class="place__grid">
     <div class="compare" data-compare>
       <div class="compare__layer compare__lens photo" data-file="lens-4-cured-meat.jpg">
         <picture>
@@ -356,6 +346,7 @@
         <p>In China, cured ducks pressed flat and red lap cheong sausages hang in a glass case the same way. The food traveled across the ocean unchanged. The sign above it did not.</p>
       </aside>
     </div>
+    </div>
   </div>
 </article>
 
@@ -366,6 +357,7 @@
       <span class="seal seal--sm" aria-hidden="true">5</span>
       <h3 id="h-place-5">The Graffiti Fruit Stand</h3>
     </header>
+    <div class="place__grid">
     <div class="compare" data-compare>
       <div class="compare__layer compare__lens photo" data-file="lens-5-fruit.jpg">
         <picture>
@@ -395,6 +387,7 @@
         <p>In Hong Kong, the same fruit sits on neat trays under handwritten signs reading "20元/份" (20 HK dollars per portion). Same fruit, same handwriting, different city.</p>
       </aside>
     </div>
+    </div>
   </div>
 </article>
 
@@ -405,6 +398,7 @@
       <span class="seal seal--sm" aria-hidden="true">6</span>
       <h3 id="h-place-6">The Bayard Street Gift Shop</h3>
     </header>
+    <div class="place__grid">
     <div class="compare" data-compare>
       <div class="compare__layer compare__lens photo" data-file="lens-1-lanterns.jpg">
         <picture>
@@ -434,16 +428,17 @@
         <p>On Lee Tung Avenue in Hong Kong, more than 800 red lanterns hang above the street for the Mid-Autumn Festival. In Chinatown, the same lanterns hang above a folding table on Bayard Street.</p>
       </aside>
     </div>
+    </div>
   </div>
 </article>
 
 <hr class="rule">
 
-<!-- SECTION 6 — VOICES -->
+<!-- 5 — VOICES -->
 <section class="section reveal" id="voices" aria-labelledby="h-voices">
   <div class="section__inner section__inner--wide">
     <header class="section__head">
-      <span class="seal" aria-hidden="true">6</span>
+      <span class="seal" aria-hidden="true">5</span>
       <h2 id="h-voices">Voices</h2>
       <span class="vertical" aria-hidden="true">人聲</span>
     </header>
@@ -458,7 +453,6 @@
         <button class="switch" id="compareToggle" type="button" aria-pressed="false"><span class="switch__track" aria-hidden="true"><span class="switch__knob"></span></span><span>Compare</span></button>
       </div>
 
-      <!-- Tab 1 — Nick -->
       <section class="panel" role="tabpanel" id="panel-nick" aria-labelledby="tab-nick" tabindex="0">
         <p class="panel__who"><strong>Nick</strong> · Lives in mainland China, works in Hong Kong, stayed in Chinatown in 2019</p>
         <div class="accordion">
@@ -472,13 +466,12 @@
           <div class="acc__panel" id="acc-n3" role="region" aria-labelledby="acc-n3-btn" hidden><p>Nick said Hong Kong is open and easy to visit, while mainland China is stricter, but he believes it will become more open in the future. He also warned, "Don't believe the news most of the time. The news is what politicians want you to see."</p></div>
         </div>
         <blockquote class="pull pull--jade"><p>"Same hair, same face, same people, different culture."</p><footer>Nick</footer></blockquote>
-        <div class="prose reflection">
-          <h4 class="reflection__h">Reflection on this interview</h4>
-          <p>Talking to Nick changed how I saw my own project. I expected him to say Chinatown felt like home, but he was critical of it. To him it looked poorer and less put-together than Hong Kong. At first that surprised me, but it made sense: he was comparing Chinatown to a wealthy, modern city he knows well. His line "same face, different culture" stuck with me, because it described Chinatown too. The people and food are the same as in Hong Kong, but the culture has been reshaped by New York. His warning not to trust the news also reminded me why primary research matters. I would never have heard his view from an article.</p>
+        <div class="accordion accordion--refl">
+          <h4 class="acc__h"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="refl-nick" id="refl-nick-btn">My reflection on this interview</button></h4>
+          <div class="acc__panel" id="refl-nick" role="region" aria-labelledby="refl-nick-btn" hidden><p>Talking to Nick changed how I saw my own project. I expected him to say Chinatown felt like home, but he was critical of it. To him it looked poorer and less put-together than Hong Kong. At first that surprised me, but it made sense: he was comparing Chinatown to a wealthy, modern city he knows well. His line "same face, different culture" stuck with me, because it described Chinatown too. The people and food are the same as in Hong Kong, but the culture has been reshaped by New York. His warning not to trust the news also reminded me why primary research matters. I would never have heard his view from an article.</p></div>
         </div>
       </section>
 
-      <!-- Tab 2 — Mr. Wong -->
       <section class="panel" role="tabpanel" id="panel-wong" aria-labelledby="tab-wong" tabindex="0" hidden>
         <p class="panel__who"><strong>"Mr. Wong"</strong> · Restaurant owner on Mott Street for 35+ years <span class="ai-note">AI-simulated interview, approved by Professor Suzuki</span></p>
         <div class="accordion">
@@ -498,13 +491,12 @@
           <div class="acc__panel" id="acc-w5" role="region" aria-labelledby="acc-w5-btn" hidden><p>"This is not a tourist street. Families live above every store. Come, eat, be respectful. Chinatown survives because people keep coming back."</p></div>
         </div>
         <blockquote class="pull pull--gray"><p>"Here is like the China from when we left."</p><footer>Mr. Wong</footer></blockquote>
-        <div class="prose reflection">
-          <h4 class="reflection__h">Reflection on this interview</h4>
-          <p>Mr. Wong described the same streets Nick did, but with completely different feelings. Where Nick saw a poor neighborhood, Mr. Wong saw a community that worked hard to protect its traditions. His answer about his grandchildren speaking English to him was the saddest part of the conversation, because it showed that the culture he fought to keep is slowly changing anyway. He also explained something I had noticed on my walk: the older people I saw, like the woman writing her order in pencil outside Noodletown, stay because everything they need is close by, while younger people leave. His last answer, "This is not a tourist street," made me rethink how I walked through the neighborhood with my camera.</p>
+        <div class="accordion accordion--refl">
+          <h4 class="acc__h"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="refl-wong" id="refl-wong-btn">My reflection on this interview</button></h4>
+          <div class="acc__panel" id="refl-wong" role="region" aria-labelledby="refl-wong-btn" hidden><p>Mr. Wong described the same streets Nick did, but with completely different feelings. Where Nick saw a poor neighborhood, Mr. Wong saw a community that worked hard to protect its traditions. His answer about his grandchildren speaking English to him was the saddest part of the conversation, because it showed that the culture he fought to keep is slowly changing anyway. He also explained something I had noticed on my walk: the older people I saw, like the woman writing her order in pencil outside Noodletown, stay because everything they need is close by, while younger people leave. His last answer, "This is not a tourist street," made me rethink how I walked through the neighborhood with my camera.</p></div>
         </div>
       </section>
 
-      <!-- Compare view -->
       <div class="compare-table" id="compareView" hidden>
         <div class="ct-row ct-row--head" role="row">
           <div class="ct-cell ct-cell--theme">Theme</div>
@@ -531,18 +523,17 @@
           <div class="ct-cell ct-cell--nick"><span class="ct-who">Nick</span><strong>Decline</strong></div>
           <div class="ct-cell ct-cell--wong"><span class="ct-who">Mr. Wong</span><strong>Preservation</strong></div>
         </div>
-      </div>
     </div>
   </div>
 </section>
 
 <hr class="rule">
 
-<!-- SECTION 7 — THE NEIGHBORHOOD AS… -->
+<!-- 6 — IF CHINATOWN WERE… -->
 <section class="section reveal" id="neighborhood" aria-labelledby="h-neighborhood">
   <div class="section__inner section__inner--wide">
     <header class="section__head">
-      <span class="seal" aria-hidden="true">7</span>
+      <span class="seal" aria-hidden="true">6</span>
       <h2 id="h-neighborhood">If Chinatown Were…</h2>
       <span class="vertical" aria-hidden="true">若是</span>
     </header>
@@ -563,75 +554,34 @@
 
 <hr class="rule">
 
-<!-- SECTION 8 — READINGS -->
-<section class="section reveal" id="readings" aria-labelledby="h-readings">
-  <div class="section__inner">
+<!-- 7 — ESSAYS -->
+<section class="section reveal" id="essays" aria-labelledby="h-essays">
+  <div class="section__inner section__inner--wide">
     <header class="section__head">
-      <span class="seal" aria-hidden="true">8</span>
-      <h2 id="h-readings">Seeing &amp; Listening</h2>
-      <span class="vertical" aria-hidden="true">觀聽</span>
-    </header>
-    <div class="prose">
-      <p>Exploring Manhattan's Chinatown through the lens of my recent trip to Hong Kong and China taught me that culture only reveals itself when you slow down to look and listen, and the Unit II readings gave me the tools to do both. Annie Dillard writes that the world is "planted in pennies" and that "it's all a matter of keeping my eyes open." Once I looked closely, I found my own pennies. Handwritten "5 FOR 5.00" signs sat above longans I had last seen in Hong Kong, the Mahayana Buddhist Temple's tiled roof sat beneath a GEICO billboard, and a fruit stall I recognized from China was covered in graffiti. These details revealed my central pattern: Chinatown is not a copy of Hong Kong but a hybrid, Chinese roots living inside New York's skin. It carries the food, family, festivals, faith, and finances from our class definition of culture, but in a translated form. Johnna Keller's "The Politics of Stairs" changed how I read the buildings themselves. The steep steps into Hop Kee and an elderly man with a cane on Division Street showed me that the people who most depend on the neighborhood are often the ones its design accommodates least.</p>
-      <p>Listening changed my thinking most. Julian Treasure, Kate Murphy, and Sherry Turkle all argue that people have stopped truly listening to each other, either waiting for their turn to talk or turning to their phones instead of real conversation. I saw this in the neighborhood: a young vendor scrolled his phone between customers while an older woman outside Noodletown wrote her order in pencil. In my interviews, I tried to stay quiet and ask follow-up questions, and that revealed a tension I never would have found online. Nick, who lives in China, works in Hong Kong, and stayed in Chinatown during his first trip to New York in 2019, saw it as "poorly done" and poor compared to home. The Chinatown restaurant owner told me, "Here is like the China from when we left," explaining that immigrants held onto the old ways for fear of losing them. One saw decline, the other preservation. Listening to both taught me that a neighborhood's culture cannot be judged from a photo or a single opinion. Like Dillard's "tree with the lights in it," it appears only when you give it real attention. This project changed Chinatown, for me, from a tourist stop into a living neighborhood shaped by the places its people came from.</p>
-    </div>
-  </div>
-</section>
-
-<hr class="rule">
-
-<!-- SECTION 9 — REFLECTION -->
-<section class="section reveal" id="reflection" aria-labelledby="h-reflection">
-  <div class="section__inner">
-    <header class="section__head">
-      <span class="seal" aria-hidden="true">9</span>
-      <h2 id="h-reflection">What I Take With Me</h2>
+      <span class="seal" aria-hidden="true">7</span>
+      <h2 id="h-essays">Seeing, Listening, Looking Back</h2>
       <span class="vertical" aria-hidden="true">回想</span>
     </header>
-    <div class="prose">
-      <p>This project made me notice things I would have walked right past. Before, Chinatown was a blur of red signs and crowded sidewalks. After looking at each place for five minutes at a time, I started seeing the details that tell its story: a pencil and a scrap of paper, a wheelchair sign at the bottom of a steep staircase, graffiti on a fruit stand. Having just been to Hong Kong and China, I kept catching myself comparing, and the biggest surprise was how much of Hong Kong I recognized, from the longans to the lanterns, and how differently it all felt once New York got its hands on it. The best things about the neighborhood are its food, its families, and how hard its people work to keep their traditions alive. What could be improved is access. Too many restaurants and shops are up or down stairs, which shuts out the elderly residents who depend on the neighborhood most.</p>
-      <p>If I could recommend something to future researchers, it would be to talk to people before taking photos. The interviews gave my pictures their meaning. Nick and Mr. Wong looked at the same streets and saw two completely different things, and both were right. I'd like to see Chinatown protected from rising rents so the older generation isn't pushed out, and I'd like to see more ramps and elevators so everyone can reach the restaurants that make it special. The question I'm still left with is what Chinatown will look like when the generation that built it is gone, and whether the young people who leave will ever come back to carry it forward.</p>
+    <div class="essays">
+      <div class="tabs tabs--essays" role="tablist" aria-label="Essays">
+        <button class="tab" role="tab" id="tab-readings" aria-selected="true" aria-controls="panel-readings" type="button">Seeing &amp; Listening</button>
+        <button class="tab" role="tab" id="tab-reflection" aria-selected="false" aria-controls="panel-reflection" tabindex="-1" type="button">What I Take With Me</button>
+      </div>
+      <section class="panel panel--essay" role="tabpanel" id="panel-readings" aria-labelledby="tab-readings" tabindex="0">
+        <p class="panel__who">How the Unit II readings shaped what I saw</p>
+        <div class="prose prose--sm prose--cols">
+          <p>Exploring Manhattan's Chinatown through the lens of my recent trip to Hong Kong and China taught me that culture only reveals itself when you slow down to look and listen, and the Unit II readings gave me the tools to do both. Annie Dillard writes that the world is "planted in pennies" and that "it's all a matter of keeping my eyes open." Once I looked closely, I found my own pennies. Handwritten "5 FOR 5.00" signs sat above longans I had last seen in Hong Kong, the Mahayana Buddhist Temple's tiled roof sat beneath a GEICO billboard, and a fruit stall I recognized from China was covered in graffiti. These details revealed my central pattern: Chinatown is not a copy of Hong Kong but a hybrid, Chinese roots living inside New York's skin. It carries the food, family, festivals, faith, and finances from our class definition of culture, but in a translated form. Johnna Keller's "The Politics of Stairs" changed how I read the buildings themselves. The steep steps into Hop Kee and an elderly man with a cane on Division Street showed me that the people who most depend on the neighborhood are often the ones its design accommodates least.</p>
+          <p>Listening changed my thinking most. Julian Treasure, Kate Murphy, and Sherry Turkle all argue that people have stopped truly listening to each other, either waiting for their turn to talk or turning to their phones instead of real conversation. I saw this in the neighborhood: a young vendor scrolled his phone between customers while an older woman outside Noodletown wrote her order in pencil. In my interviews, I tried to stay quiet and ask follow-up questions, and that revealed a tension I never would have found online. Nick, who lives in China, works in Hong Kong, and stayed in Chinatown during his first trip to New York in 2019, saw it as "poorly done" and poor compared to home. The Chinatown restaurant owner told me, "Here is like the China from when we left," explaining that immigrants held onto the old ways for fear of losing them. One saw decline, the other preservation. Listening to both taught me that a neighborhood's culture cannot be judged from a photo or a single opinion. Like Dillard's "tree with the lights in it," it appears only when you give it real attention. This project changed Chinatown, for me, from a tourist stop into a living neighborhood shaped by the places its people came from.</p>
+        </div>
+      </section>
+      <section class="panel panel--essay" role="tabpanel" id="panel-reflection" aria-labelledby="tab-reflection" tabindex="0" hidden>
+        <p class="panel__who">Reflection</p>
+        <div class="prose prose--sm prose--cols">
+          <p>This project made me notice things I would have walked right past. Before, Chinatown was a blur of red signs and crowded sidewalks. After looking at each place for five minutes at a time, I started seeing the details that tell its story: a pencil and a scrap of paper, a wheelchair sign at the bottom of a steep staircase, graffiti on a fruit stand. Having just been to Hong Kong and China, I kept catching myself comparing, and the biggest surprise was how much of Hong Kong I recognized, from the longans to the lanterns, and how differently it all felt once New York got its hands on it. The best things about the neighborhood are its food, its families, and how hard its people work to keep their traditions alive. What could be improved is access. Too many restaurants and shops are up or down stairs, which shuts out the elderly residents who depend on the neighborhood most.</p>
+          <p>If I could recommend something to future researchers, it would be to talk to people before taking photos. The interviews gave my pictures their meaning. Nick and Mr. Wong looked at the same streets and saw two completely different things, and both were right. I'd like to see Chinatown protected from rising rents so the older generation isn't pushed out, and I'd like to see more ramps and elevators so everyone can reach the restaurants that make it special. The question I'm still left with is what Chinatown will look like when the generation that built it is gone, and whether the young people who leave will ever come back to carry it forward.</p>
+        </div>
+      </section>
     </div>
-  </div>
-</section>
-
-<hr class="rule">
-
-<!-- SECTION 10 — SOURCES -->
-<section class="section reveal" id="sources" aria-labelledby="h-sources">
-  <div class="section__inner">
-    <header class="section__head">
-      <span class="seal" aria-hidden="true">10</span>
-      <h2 id="h-sources">Sources</h2>
-      <span class="vertical" aria-hidden="true">參考</span>
-    </header>
-    <p class="lede">APA 7. Each "↩ back" link returns you to where the source is cited.</p>
-    <ol class="refs">
-      <li id="src-1"><span class="refs__num">1.</span> Wikipedia contributors. (n.d.). <em>Chinatown, Manhattan</em>. Wikipedia. Retrieved October 27, 2026, from <a href="https://en.wikipedia.org/wiki/Chinatown,_Manhattan" rel="noopener" target="_blank">https://en.wikipedia.org/wiki/Chinatown,_Manhattan</a> <span class="backs"><a class="back" href="#cite-1a" aria-label="Back to first citation of source 1">↩ back</a> <a class="back" href="#cite-1b" aria-label="Back to second citation of source 1">↩ back²</a></span></li>
-      <li id="src-2"><span class="refs__num">2.</span> Wikipedia contributors. (n.d.). <em>Chinese Consolidated Benevolent Association</em>. Wikipedia. Retrieved October 27, 2026, from <a href="https://en.wikipedia.org/wiki/Chinese_Consolidated_Benevolent_Association" rel="noopener" target="_blank">https://en.wikipedia.org/wiki/Chinese_Consolidated_Benevolent_Association</a> <span class="backs"><a class="back" href="#cite-2a" aria-label="Back to citation of source 2">↩ back</a></span></li>
-      <li id="src-3"><span class="refs__num">3.</span> Wikipedia contributors. (n.d.). <em>Hip Sing Association</em>. Wikipedia. Retrieved October 27, 2026, from <a href="https://en.wikipedia.org/wiki/Hip_Sing_Association" rel="noopener" target="_blank">https://en.wikipedia.org/wiki/Hip_Sing_Association</a> <span class="backs"><a class="back" href="#cite-3a" aria-label="Back to citation of source 3">↩ back</a></span></li>
-      <li id="src-4"><span class="refs__num">4.</span> Untapped New York. (2014, June 27). <em>Daily what?! The tallest Buddha in New York City sits in the Mahayana Temple of Chinatown</em>. <a href="https://untappedcities.com/2014/06/27/daily-what-the-tallest-buddha-in-new-york-city-sits-in-the-mahayana-temple-of-chinatown/" rel="noopener" target="_blank">https://untappedcities.com/2014/06/27/daily-what-the-tallest-buddha-in-new-york-city-sits-in-the-mahayana-temple-of-chinatown/</a> <span class="backs"><a class="back" href="#cite-4a" aria-label="Back to citation of source 4">↩ back</a></span></li>
-      <li id="src-5"><span class="refs__num">5.</span> Wikipedia contributors. (n.d.). <em>Hop Kee</em>. Wikipedia. Retrieved October 27, 2026, from <a href="https://en.wikipedia.org/wiki/Hop_Kee" rel="noopener" target="_blank">https://en.wikipedia.org/wiki/Hop_Kee</a> <span class="backs"><a class="back" href="#cite-5a" aria-label="Back to citation of source 5">↩ back</a></span></li>
-      <li id="src-6"><span class="refs__num">6.</span> Resy Editors. (2020, September). <em>Great NY Noodletown is everything that makes New York special</em>. Resy. <a href="https://blog.resy.com/2020/09/great-ny-noodletown-is-everything-that-makes-new-york-special/" rel="noopener" target="_blank">https://blog.resy.com/2020/09/great-ny-noodletown-is-everything-that-makes-new-york-special/</a> <span class="backs"><a class="back" href="#cite-6a" aria-label="Back to citation of source 6">↩ back</a></span></li>
-      <li id="src-7"><span class="refs__num">7.</span> Wikipedia contributors. (n.d.). <em>Lee Tung Street</em>. Wikipedia. Retrieved October 27, 2026, from <a href="https://en.wikipedia.org/wiki/Lee_Tung_Street" rel="noopener" target="_blank">https://en.wikipedia.org/wiki/Lee_Tung_Street</a> <span class="backs"><a class="back" href="#cite-7a" aria-label="Back to citation of source 7">↩ back</a></span></li>
-      <li id="src-8"><span class="refs__num">8.</span> The Standard. (2023, August 31). <em>Lanterns return to Lee Tung Avenue</em>. <a href="https://www.thestandard.com.hk/news/article/55680/Lanterns-return-to-Lee-Tung-Avenue" rel="noopener" target="_blank">https://www.thestandard.com.hk/news/article/55680/Lanterns-return-to-Lee-Tung-Avenue</a> <span class="backs"><a class="back" href="#cite-8a" aria-label="Back to citation of source 8">↩ back</a></span></li>
-    </ol>
-
-    <h3 class="subhead">Class readings</h3>
-    <ul class="refs refs--plain">
-      <li>Berger, W. (n.d.). <em>Nurturing the ability to question</em> [Video]. YouTube. <a href="https://www.youtube.com/watch?v=P-8nBo1WTf4" rel="noopener" target="_blank">https://www.youtube.com/watch?v=P-8nBo1WTf4</a></li>
-      <li>Dillard, A. (1974). <em>Pilgrim at Tinker Creek</em>. Harper's Magazine Press.</li>
-      <li>Keller, J. S. (n.d.). <em>The politics of stairs</em> [Course reading]. Writing for Exploration, New York University.</li>
-      <li>Murphy, K. (2020). <em>You're not listening: What you're missing and why it matters</em>. Celadon Books.</li>
-      <li>Treasure, J. (2011). <em>5 ways to listen better</em> [Video]. TED Conferences. <a href="https://www.ted.com/talks/julian_treasure_5_ways_to_listen_better" rel="noopener" target="_blank">https://www.ted.com/talks/julian_treasure_5_ways_to_listen_better</a></li>
-      <li>Turkle, S. (2012, April 21). The flight from conversation. <em>The New York Times</em>.</li>
-    </ul>
-
-    <h3 class="subhead">Interviews</h3>
-    <ul class="refs refs--plain">
-      <li>Nick. (2026, October). Personal interview [Notes].</li>
-      <li>"Mr. Wong." (2026, October). AI-simulated interview, approved by course instructor.</li>
-    </ul>
   </div>
 </section>
 
@@ -639,7 +589,7 @@
 
 <footer class="footer">
   <div class="footer__inner">
-    <p>"Same Roots, New Skin" · Jacob Nazar · Writing for Exploration, NYU · Fall 2026 · All photos by the author.</p>
+    <p>"Same Roots, New Skin" · Jacob Nazar · Writing for Exploration, NYU · Fall 2026 · All photos by the author. · <a href="sources.html">Sources</a></p>
     <span class="vertical vertical--footer" aria-hidden="true">唐人街</span>
   </div>
 </footer>
