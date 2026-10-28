@@ -48,7 +48,7 @@ those numbers so each dot sits on the detail it names.
 Live site: https://jacobnazar26-del.github.io/same-roots-new-skin/
 
 `.github/workflows/pages.yml` publishes the repository root to GitHub Pages on every push to
-`main` or `claude/new-session-l28vjv` (or from the Actions tab via "Run workflow"). The
+`claude/new-session-l28vjv`, the default branch (or from the Actions tab via "Run workflow"). The
 `github-pages` environment only accepts deploys from the repository's default branch, so keep
 the branch you push to set as the default, or add the other branch under Settings →
 Environments → github-pages → Deployment branches.
