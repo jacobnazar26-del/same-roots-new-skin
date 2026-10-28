@@ -782,13 +782,6 @@ h4 { font-size: 1.15rem; }
 .prose--sm { font-size: 1rem; line-height: 1.62; }
 .minihead { font-size: 1rem; margin: 16px 0 6px; color: var(--red); letter-spacing: .02em; }
 @media (max-width: 860px) { .why { grid-template-columns: 1fr; } }
-.more-row { margin: 14px 0 0; }
-.more-btn { border: 1px dashed rgba(20,20,20,.3); border-radius: 3px; padding: 11px 14px; font-size: .95rem; }
-.more-btn::before { content: "+"; font-family: var(--font-display); color: var(--red); font-weight: 900; margin-right: 10px; }
-.more-btn::after { content: none; }
-.more-btn[aria-expanded="true"]::before { content: "–"; }
-#moreQuestions { margin-top: 12px; }
-#moreQuestions .subhead { margin-top: 10px; }
 .places-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 460px); gap: 16px 40px; align-items: start; margin-bottom: 4px; }
 .places-intro .lede { margin-bottom: 0; }
 @media (max-width: 860px) { .places-intro { grid-template-columns: 1fr; } }
