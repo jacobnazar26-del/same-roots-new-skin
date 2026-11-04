@@ -818,3 +818,6 @@ h4 { font-size: 1.15rem; }
 /* essays: both visible */
 .essay__h { font-size: 1.35rem; color: var(--red); margin: 0 0 4px; }
 .panel--essay + .panel--essay { border-top: 1px solid var(--line); }
+
+.refs__peer::after { content: "Peer-reviewed"; display: inline-block; margin-left: 8px; font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: var(--jade); border: 1px solid var(--jade); padding: 1px 6px; border-radius: 2px; vertical-align: 2px; }
+.cite + .cite { margin-left: 1px; }
