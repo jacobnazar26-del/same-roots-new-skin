@@ -801,3 +801,20 @@ h4 { font-size: 1.15rem; }
 .nav__menu .nav__tab[aria-current="page"] { background: var(--red); color: #fff; }
 @media (max-width: 1100px) { .nav__menu .nav__tab { margin: 6px 0 0; display: inline-block; align-self: flex-start; } }
 .page-sources .section { padding-top: 36px; min-height: 60vh; }
+
+/* questions: full brainstorm list toggle */
+.more-row { margin: 14px 0 0; }
+.more-btn { border: 1px dashed rgba(20,20,20,.3); border-radius: 3px; padding: 11px 14px; font-size: .95rem; }
+.more-btn::before { content: "+"; font-family: var(--font-display); color: var(--red); font-weight: 900; margin-right: 10px; }
+.more-btn::after { content: none; }
+.more-btn[aria-expanded="true"]::before { content: "–"; }
+#allQuestions { margin-top: 12px; }
+.qcols { display: grid; grid-template-columns: 1.3fr 1fr; gap: 8px 40px; }
+.qcols .subhead { margin-top: 10px; }
+.plainlist--num { padding-left: 1.4em; }
+.plainlist--num li::marker { color: var(--red); font-weight: 700; }
+.q-top { font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--paper); background: var(--red); padding: 2px 6px; border-radius: 2px; margin-left: 4px; vertical-align: 2px; }
+@media (max-width: 760px) { .qcols { grid-template-columns: 1fr; } }
+/* essays: both visible */
+.essay__h { font-size: 1.35rem; color: var(--red); margin: 0 0 4px; }
+.panel--essay + .panel--essay { border-top: 1px solid var(--line); }
