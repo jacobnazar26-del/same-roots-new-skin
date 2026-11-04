@@ -821,3 +821,10 @@ h4 { font-size: 1.15rem; }
 
 .refs__peer::after { content: "Peer-reviewed"; display: inline-block; margin-left: 8px; font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: var(--jade); border: 1px solid var(--jade); padding: 1px 6px; border-radius: 2px; vertical-align: 2px; }
 .cite + .cite { margin-left: 1px; }
+
+/* interview quote strip */
+.words { margin: 14px 0 0; padding: 12px 16px; border-left: 3px solid var(--gold); background: rgba(212,160,23,.07); max-width: 68ch; }
+.words__label { display: block; font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; font-weight: 700; color: var(--gray); margin-bottom: 4px; }
+.words__q { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; line-height: 1.35; color: var(--ink); }
+.words__q p { margin: 0; }
+.words__note { margin: 6px 0 0; font-size: .95rem; color: #3a3a3a; }
